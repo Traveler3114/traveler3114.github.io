@@ -457,6 +457,10 @@ img { max-width: 100%; display: block; }
   margin-bottom: 16px;
 }
 
+.about-text {
+  max-width: 65ch;
+}
+
 .about-text p {
   color: var(--text-light);
   margin-bottom: 16px;
@@ -742,6 +746,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-light);
+  overflow-wrap: break-word;
 }
 
 .project-links {
