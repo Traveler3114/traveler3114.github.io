@@ -875,6 +875,11 @@ img { max-width: 100%; display: block; }
 }
 
 /* ========== Contact ========== */
+#contact {
+  padding: 100px 0 180px;
+  min-height: 85vh;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
