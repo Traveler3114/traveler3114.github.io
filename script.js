@@ -119,27 +119,6 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ========== Contact Form ==========
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const originalText = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    const notification = document.createElement('div');
-    notification.className = 'form-notification success';
-    notification.textContent = 'Thanks! Your message has been sent successfully.';
-    contactForm.appendChild(notification);
-    btn.innerHTML = '<span>Sent!</span> <i class="fas fa-check"></i>';
-    btn.disabled = false;
-    contactForm.reset();
-    setTimeout(() => notification.remove(), 4000);
-  }, 1500);
-});
 
 // ========== Resize handler for reveal ==========
 window.addEventListener('resize', revealOnScroll);
