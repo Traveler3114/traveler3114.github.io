@@ -77,8 +77,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 function updateActiveLink() {
   let current = 'hero';
   sections.forEach(section => {
-    const top = section.offsetTop - 120;
-    if (window.scrollY >= top) {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 200) {
       current = section.getAttribute('id');
     }
   });
@@ -107,107 +107,6 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
-
-// ========== Animated Counters ==========
-const statNumbers = document.querySelectorAll('.stat-number');
-let countersAnimated = false;
-
-function animateCounters() {
-  if (countersAnimated) return;
-  const aboutSection = document.getElementById('about');
-  const rect = aboutSection.getBoundingClientRect();
-  if (rect.top < window.innerHeight - 100) {
-    countersAnimated = true;
-    statNumbers.forEach(counter => {
-      const target = parseInt(counter.getAttribute('data-target'));
-      const increment = target / 40;
-      let current = 0;
-      const update = () => {
-        current += increment;
-        if (current < target) {
-          counter.textContent = Math.ceil(current);
-          requestAnimationFrame(update);
-        } else {
-          counter.textContent = target + '+';
-        }
-      };
-      update();
-    });
-  }
-}
-
-window.addEventListener('scroll', animateCounters);
-
-// ========== Skill Bars Animation ==========
-const skillItems = document.querySelectorAll('.skill-item');
-let skillBarsAnimated = false;
-
-function animateSkillBars() {
-  if (skillBarsAnimated) return;
-  const skillsSection = document.getElementById('skills');
-  const rect = skillsSection.getBoundingClientRect();
-  if (rect.top < window.innerHeight - 50) {
-    skillBarsAnimated = true;
-    skillItems.forEach(item => {
-      const level = item.getAttribute('data-level');
-      const fill = item.querySelector('.skill-fill');
-      fill.style.width = level + '%';
-    });
-  }
-}
-
-window.addEventListener('scroll', animateSkillBars);
-
-// ========== Project Filter ==========
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.getAttribute('data-filter');
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.getAttribute('data-category') === filter) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    });
-  });
-});
-
-// ========== Testimonials Slider ==========
-const testimonialCards = document.querySelectorAll('.testimonial-card');
-const dots = document.querySelectorAll('.testimonial-dot');
-let currentTestimonial = 0;
-let testimonialInterval;
-
-function showTestimonial(index) {
-  testimonialCards.forEach((card, i) => {
-    card.classList.toggle('active', i === index);
-  });
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-  currentTestimonial = index;
-}
-
-dots.forEach(dot => {
-  dot.addEventListener('click', () => {
-    const index = parseInt(dot.getAttribute('data-index'));
-    showTestimonial(index);
-    clearInterval(testimonialInterval);
-    testimonialInterval = setInterval(nextTestimonial, 5000);
-  });
-});
-
-function nextTestimonial() {
-  showTestimonial((currentTestimonial + 1) % testimonialCards.length);
-}
-
-showTestimonial(0);
-testimonialInterval = setInterval(nextTestimonial, 5000);
 
 // ========== Back to Top ==========
 const backToTop = document.getElementById('backToTop');
