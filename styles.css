@@ -550,6 +550,78 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 
+/* ========== What I Offer ========== */
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.offer-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.offer-card i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.offer-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.offer-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.pricing-note {
+  background: rgba(108, 99, 255, 0.05);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pricing-note i {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.pricing-note p {
+  flex: 1;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.pricing-note a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========== Projects ========== */
 .filter-buttons {
   display: flex;
