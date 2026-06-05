@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Doe | Portfolio</title>
+  <title>Matej Križić | Game & Full‑Stack Dev</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -11,7 +11,7 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="#" class="nav-logo">JD</a>
+      <a href="#" class="nav-logo">MK</a>
       <ul class="nav-menu" id="navMenu">
         <li><a href="#hero" class="nav-link active">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -36,22 +36,20 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-greeting">Hello, I'm</p>
-      <h1 class="hero-name">John Doe</h1>
+      <h1 class="hero-name">Matej Križić</h1>
       <div class="hero-tagline">
         <span class="static-text">I build </span>
         <span class="dynamic-text" id="dynamicText"></span>
         <span class="cursor">|</span>
       </div>
-      <p class="hero-desc">Full-stack developer passionate about crafting clean, performant web experiences.</p>
+      <p class="hero-desc">Game developer and full‑stack engineer. I build multiplayer Unreal Engine 5 experiences and production‑ready .NET platforms. Student, but shipping real systems.</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
       <div class="hero-socials">
-        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://github.com/Traveler3114" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/matej-kri%C5%BEi%C4%87-90550a30b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -60,118 +58,103 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Section (no stats) -->
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title reveal">About Me</h2>
-      <p class="section-subtitle reveal">Get to know me a little better</p>
+      <p class="section-subtitle reveal">Building systems that ship – from game mechanics to business platforms</p>
       <div class="about-grid">
         <div class="about-image reveal">
           <div class="about-img-placeholder">
             <i class="fas fa-user"></i>
-            <span>Your Photo</span>
+            <span>MK</span>
           </div>
         </div>
         <div class="about-text reveal">
-          <h3>Building the web, one project at a time.</h3>
+          <h3>Building systems that ship.</h3>
           <p>
-            I'm a full-stack developer with 5+ years of experience building digital products
-            that solve real problems. I specialize in JavaScript ecosystems — from React on the
-            frontend to Node.js on the backend — and I love turning complex ideas into intuitive,
-            performant applications.
+            I'm a developer who loves both worlds: crafting immersive multiplayer gameplay in Unreal Engine 5 (C++) and architecting full‑stack .NET platforms for real‑world operations. I'm currently a student at Zagreb University of Applied Sciences, but I've already delivered commercial‑grade code at Byzantine Interactive and Repeat Games.
           </p>
           <p>
-            When I'm not coding, you'll find me exploring new tech, contributing to open source,
-            or writing about my experiences on my blog.
+            My workflow is pragmatic. For some projects (like CleaningPlatform and GetThere) I use AI coding assistants to handle boilerplate and repetitive patterns – I focus on architecture, logic, and integration. For others (like Pigeon Invaders) I write everything from scratch. Either way, I take full responsibility for every project I ship.
           </p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number" data-target="5">0</span>
-              <span class="stat-label">Years Exp</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" data-target="30">0</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" data-target="50">0</span>
-              <span class="stat-label">Clients</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number" data-target="15">0</span>
-              <span class="stat-label">Awards</span>
-            </div>
-          </div>
+          <p>
+            When I'm not coding, I'm iterating on <strong>Splitstream</strong>, my 4‑player co‑op heist game.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills Section (updated) -->
   <section id="skills" class="section alt-section">
     <div class="container">
       <h2 class="section-title reveal">Skills & Expertise</h2>
       <p class="section-subtitle reveal">Technologies I work with daily</p>
       <div class="skills-grid">
         <div class="skill-category reveal">
-          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <h3><i class="fas fa-gamepad"></i> Game Development</h3>
           <div class="skill-items">
-            <div class="skill-item" data-level="95">
-              <span class="skill-name">HTML / CSS</span>
-              <div class="skill-bar"><div class="skill-fill"></div></div>
-            </div>
             <div class="skill-item" data-level="90">
-              <span class="skill-name">JavaScript</span>
+              <span class="skill-name">Unreal Engine 5 (Advanced – my main tool, but I adapt quickly)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
             <div class="skill-item" data-level="85">
-              <span class="skill-name">React</span>
+              <span class="skill-name">C++ (with Gameplay Ability System)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
             <div class="skill-item" data-level="80">
-              <span class="skill-name">TypeScript</span>
+              <span class="skill-name">Multiplayer Networking (UE5 replication)</span>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">Raylib / Pygame</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
           </div>
         </div>
         <div class="skill-category reveal">
-          <h3><i class="fas fa-server"></i> Backend</h3>
+          <h3><i class="fas fa-code"></i> Backend & Full‑Stack</h3>
           <div class="skill-items">
             <div class="skill-item" data-level="85">
-              <span class="skill-name">Node.js</span>
+              <span class="skill-name">C# / .NET (ASP.NET Core, EF Core, MAUI)</span>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">PHP (REST APIs)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
             <div class="skill-item" data-level="80">
               <span class="skill-name">Python</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
-            <div class="skill-item" data-level="75">
-              <span class="skill-name">PostgreSQL</span>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">SQL (MySQL, SQL Server)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
-            <div class="skill-item" data-level="70">
-              <span class="skill-name">MongoDB</span>
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">JWT Authentication</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
           </div>
         </div>
         <div class="skill-category reveal">
-          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <h3><i class="fas fa-tools"></i> Tools & Workflow</h3>
           <div class="skill-items">
             <div class="skill-item" data-level="90">
-              <span class="skill-name">Git</span>
+              <span class="skill-name">Git / GitHub</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
             <div class="skill-item" data-level="85">
-              <span class="skill-name">Docker</span>
+              <span class="skill-name">AI‑assisted development (Cursor, Copilot)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
-            <div class="skill-item" data-level="80">
-              <span class="skill-name">AWS</span>
+            <div class="skill-item" data-level="65">
+              <span class="skill-name">Docker (basic)</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
-            <div class="skill-item" data-level="75">
-              <span class="skill-name">CI/CD</span>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">Postman / API testing</span>
               <div class="skill-bar"><div class="skill-fill"></div></div>
             </div>
           </div>
@@ -180,117 +163,80 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section (no filters, 4 projects) -->
   <section id="projects" class="section">
     <div class="container">
       <h2 class="section-title reveal">Featured Projects</h2>
       <p class="section-subtitle reveal">Some things I've built recently</p>
-      <div class="filter-buttons reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="frontend">Frontend</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-      </div>
       <div class="projects-grid">
+        <!-- Splitstream (private) -->
+        <div class="project-card reveal" data-category="gamedev">
+          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Unreal Engine 5 / C++ / GAS / Multiplayer</span>
+            <h3>Splitstream</h3>
+            <p>4‑player co‑op heist game with a cause‑and‑effect timeline system – actions in the present reshape the future environment. Built with UE5, C++, and the Gameplay Ability System. Implemented fully networked multiplayer, AI guard behavior, and cross‑timeline coordination. AI assistance used for boilerplate and RPC stubs; core gameplay logic and architecture by me.</p>
+            <div class="project-tech">
+              <span>Unreal Engine 5</span><span>C++</span><span>GAS</span><span>Multiplayer</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" style="opacity:0.7;"><i class="fab fa-github"></i> Private – contact for access</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CleaningPlatform (public) -->
         <div class="project-card reveal" data-category="fullstack">
           <div class="project-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-broom"></i>
           </div>
           <div class="project-info">
-            <span class="project-tag">Full Stack</span>
-            <h3>E-Commerce Platform</h3>
-            <p>A full-featured online store with cart, auth, payments, and admin dashboard.</p>
+            <span class="project-tag">ASP.NET Core / C# / SQL Server / JWT</span>
+            <h3>CleaningPlatform</h3>
+            <p>Architected and led development of a full‑stack operations platform for cleaning services. Designed the backend‑driven API with JWT auth, permission‑based authorization, 16 controllers, 15 business logic managers, and 29 entities. Directed implementation using AI‑assisted development – focused on architecture, logic validation, and system integration. I take full responsibility for every project I ship, regardless of how much AI assisted. Result: production‑ready platform delivered rapidly.</p>
             <div class="project-tech">
-              <span>React</span><span>Node.js</span><span>Stripe</span><span>MongoDB</span>
+              <span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>JWT</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Traveler3114/CleaningPlatform" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </div>
-        <div class="project-card reveal" data-category="frontend">
+
+        <!-- Pigeon Invaders (public, no AI) -->
+        <div class="project-card reveal" data-category="gamedev">
           <div class="project-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-dove"></i>
           </div>
           <div class="project-info">
-            <span class="project-tag">Frontend</span>
-            <h3>Analytics Dashboard</h3>
-            <p>Real-time data visualization dashboard with interactive charts and filters.</p>
+            <span class="project-tag">C++ / C# / Python / Raylib / ASP.NET API</span>
+            <h3>Pigeon Invaders</h3>
+            <p>A game rebuilt across three versions to demonstrate deep understanding of core programming concepts: Python/Pygame (rapid prototype), C#/Windows Forms + Firebase (desktop with cloud storage), and C++/Raylib + ASP.NET API + MySQL (high‑performance with full backend). Each iteration was written entirely by me, improving architecture, performance, and feature set. No AI assistance – purely my own code.</p>
             <div class="project-tech">
-              <span>React</span><span>D3.js</span><span>Tailwind</span>
+              <span>C++</span><span>C#</span><span>Python</span><span>Raylib</span><span>ASP.NET</span><span>MySQL</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Traveler3114/PigeonInvaders" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </div>
-        <div class="project-card reveal" data-category="backend">
-          <div class="project-img" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Backend</span>
-            <h3>API Gateway Service</h3>
-            <p>Microservices gateway with rate limiting, caching, and auth. Handles 10k+ req/s.</p>
-            <div class="project-tech">
-              <span>Node.js</span><span>Redis</span><span>Docker</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-        </div>
+
+        <!-- GetThere (public) -->
         <div class="project-card reveal" data-category="fullstack">
-          <div class="project-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
-            <i class="fas fa-comments"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Full Stack</span>
-            <h3>Real-time Chat App</h3>
-            <p>Messaging platform with rooms, file sharing, typing indicators, and emojis.</p>
-            <div class="project-tech">
-              <span>React</span><span>Socket.io</span><span>Node.js</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal" data-category="frontend">
           <div class="project-img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
-            <i class="fas fa-film"></i>
+            <i class="fas fa-bus"></i>
           </div>
           <div class="project-info">
-            <span class="project-tag">Frontend</span>
-            <h3>Movie Discovery App</h3>
-            <p>Search and discover movies using TMDB API with infinite scroll and favorites.</p>
+            <span class="project-tag">Modular backend / .NET / Plugin architecture</span>
+            <h3>GetThere</h3>
+            <p>A modular transport and travel platform with a unified wallet and account system across multiple mobility operators. Designed the backend architecture to allow rapid integration of new operator APIs (buses, trains, e‑scooters, flights). Core wallet system and plugin‑based operator integration are implemented. The project is in active development; I use AI‑assisted coding to accelerate feature delivery while maintaining a clean, extensible architecture. I take full responsibility for all code shipped.</p>
             <div class="project-tech">
-              <span>React</span><span>Redux</span><span>SCSS</span>
+              <span>C#</span><span>.NET</span><span>SQL</span><span>REST API design</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card reveal" data-category="backend">
-          <div class="project-img" style="background: linear-gradient(135deg, #fa709a, #fee140);">
-            <i class="fas fa-robot"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Backend</span>
-            <h3>Bot Framework</h3>
-            <p>Extensible bot framework with plugins, NLP, and multi-platform deployment.</p>
-            <div class="project-tech">
-              <span>Python</span><span>FastAPI</span><span>NLP</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/Traveler3114/GetThere" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
           </div>
         </div>
@@ -298,7 +244,7 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience Section (real only) -->
   <section id="experience" class="section alt-section">
     <div class="container">
       <h2 class="section-title reveal">Experience</h2>
@@ -307,92 +253,26 @@
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-year">2024 - Present</span>
-            <h3>Senior Full-Stack Developer</h3>
-            <span class="timeline-company">TechCorp Inc.</span>
-            <p>Leading a team of 5 developers building scalable SaaS solutions. Architected microservices that reduced response times by 40%.</p>
+            <span class="timeline-year">Aug 2025 – Sep 2025</span>
+            <h3>Sole Programmer</h3>
+            <span class="timeline-company">Repeat Games</span>
+            <p>Developed a multiplayer MOBA‑style game demo from scratch. Implemented core gameplay systems, abilities, and networking using Unreal Engine 5, C++, and Gameplay Ability System (GAS).</p>
           </div>
         </div>
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-year">2022 - 2024</span>
-            <h3>Full-Stack Developer</h3>
-            <span class="timeline-company">StartupXYZ</span>
-            <p>Built the core product from MVP to 50k users. Implemented real-time features and optimized database queries for 5x speed improvement.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">2020 - 2022</span>
-            <h3>Junior Developer</h3>
-            <span class="timeline-company">WebAgency</span>
-            <p>Developed responsive websites and web apps for 20+ clients. Introduced modern tooling that cut build times by 60%.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">2019 - 2020</span>
-            <h3>Intern</h3>
-            <span class="timeline-company">DevStudio</span>
-            <p>Assisted in frontend development and testing. Wrote unit tests and contributed to internal component library.</p>
+            <span class="timeline-year">May 2025 – Jul 2025</span>
+            <h3>Gameplay Programmer</h3>
+            <span class="timeline-company">Byzantine Interactive</span>
+            <p>Worked on an existing large‑scale GAS codebase, diagnosing and fixing bugs in ability logic, C++ implementations, and gameplay interactions. Improved stability and reliability within a complex ability framework.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2 class="section-title reveal">What People Say</h2>
-      <p class="section-subtitle reveal">Feedback from clients and colleagues</p>
-      <div class="testimonials-slider reveal">
-        <div class="testimonial-card active">
-          <i class="fas fa-quote-left"></i>
-          <p>"John delivered an exceptional product ahead of schedule. His attention to detail and clean code made maintenance a breeze."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SM</div>
-            <div>
-              <strong>Sarah Mitchell</strong>
-              <span>CTO, TechCorp</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fas fa-quote-left"></i>
-          <p>"Working with John was a pleasure. He understood our requirements perfectly and built a solution that exceeded expectations."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AK</div>
-            <div>
-              <strong>Alex Kim</strong>
-              <span>Product Manager, StartupXYZ</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <i class="fas fa-quote-left"></i>
-          <p>"John's ability to communicate complex technical concepts to non-technical stakeholders is rare and invaluable."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">RJ</div>
-            <div>
-              <strong>Rachel Johnson</strong>
-              <span>Founder, WebAgency</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-nav">
-          <button class="testimonial-dot active" data-index="0"></button>
-          <button class="testimonial-dot" data-index="1"></button>
-          <button class="testimonial-dot" data-index="2"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
+  <!-- Contact Section (updated info) -->
   <section id="contact" class="section alt-section">
     <div class="container">
       <h2 class="section-title reveal">Get in Touch</h2>
@@ -400,32 +280,31 @@
       <div class="contact-grid">
         <div class="contact-info reveal">
           <h3>Let's work together</h3>
-          <p>I'm always open to new opportunities, collaborations, or just a friendly chat.</p>
+          <p>I'm open for freelance, contract, or collaboration opportunities.</p>
           <div class="contact-detail">
             <i class="fas fa-envelope"></i>
             <div>
               <span>Email</span>
-              <a href="mailto:john@example.com">john@example.com</a>
+              <a href="mailto:matej.krizic16@gmail.com">matej.krizic16@gmail.com</a>
             </div>
           </div>
           <div class="contact-detail">
             <i class="fas fa-phone"></i>
             <div>
               <span>Phone</span>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
+              <a href="tel:+385955100550">+385 95 5100 550</a>
             </div>
           </div>
           <div class="contact-detail">
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <span>Location</span>
-              <span>San Francisco, CA</span>
+              <span>Zagreb, Croatia</span>
             </div>
           </div>
           <div class="contact-socials">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Traveler3114" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/matej-kri%C5%BEi%C4%87-90550a30b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
         <form class="contact-form reveal" id="contactForm">
@@ -454,12 +333,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2026 John Doe. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Blog</a>
-        </div>
+        <p>&copy; 2026 Matej Križić. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -469,6 +343,26 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <!-- Script is linked – no need to embed, but we must also update the dynamic words in script.js -->
   <script src="script.js"></script>
+  <!-- We also need to override the words array in script.js? 
+       The script.js file still has the old words. Since you have script.js separately, 
+       I'll assume you'll replace it with the updated version below. 
+       For completeness, I'm adding a small inline override, but better to replace script.js -->
+  <script>
+    // Override the typing words to match game dev & full-stack
+    if (typeof words !== 'undefined') {
+      words.length = 0;
+      words.push('Unreal Engine Games', '.NET Full‑Stack Platforms', 'Multiplayer Systems', 'Clean Architecture');
+    } else {
+      // In case the external script hasn't loaded yet, wait for it
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.words) {
+          window.words.length = 0;
+          window.words.push('Unreal Engine Games', '.NET Full‑Stack Platforms', 'Multiplayer Systems', 'Clean Architecture');
+        }
+      });
+    }
+  </script>
 </body>
 </html>

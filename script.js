@@ -1,5 +1,5 @@
 // ========== Typing Effect ==========
-const words = ['Web Apps', 'APIs', 'UI/UX', 'Dashboards', 'Solutions'];
+const words = ['Unreal Engine Games', '.NET Full‑Stack Platforms', 'Multiplayer Systems', 'Clean Architecture'];
 const dynamicText = document.getElementById('dynamicText');
 let wordIndex = 0;
 let charIndex = 0;
