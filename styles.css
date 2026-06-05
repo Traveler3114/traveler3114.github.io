@@ -754,6 +754,33 @@ img { max-width: 100%; display: block; }
   gap: 16px;
 }
 
+.project-metrics {
+  margin: 12px 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.looking-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.looking-content p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.looking-content strong {
+  color: var(--primary);
+}
+
 .project-link {
   font-size: 0.85rem;
   font-weight: 600;

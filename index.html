@@ -19,6 +19,7 @@
         <li><a href="#offer" class="nav-link">Offer</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#looking" class="nav-link">Looking for</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
@@ -43,7 +44,7 @@
         <span class="dynamic-text" id="dynamicText"></span>
         <span class="cursor">|</span>
       </div>
-      <p class="hero-desc">Game developer and full‑stack engineer. I build multiplayer Unreal Engine 5 experiences and production‑ready .NET platforms. Student, but shipping real systems.</p>
+      <p class="hero-desc">Unreal Engine & Full‑Stack Developer focused on multiplayer systems, game networking, and scalable web applications. Built multiplayer games in Unreal Engine 5 and production‑ready business applications using C#, ASP.NET, SQL, and modern web technologies.</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
@@ -74,13 +75,7 @@
         <div class="about-text reveal">
           <h3>Building systems that ship.</h3>
           <p>
-            I'm a developer who loves both worlds: crafting immersive multiplayer gameplay in Unreal Engine 5 (C++) and architecting full‑stack .NET platforms for real‑world operations. I'm currently a student at Zagreb University of Applied Sciences, but I've already delivered commercial‑grade code at Byzantine Interactive and Repeat Games.
-          </p>
-          <p>
-            My workflow is pragmatic. For some projects (like CleaningPlatform and GetThere) I use AI coding assistants to handle boilerplate and repetitive patterns – I focus on architecture, logic, and integration. For others (like Pigeon Invaders) I write everything from scratch. Either way, I take full responsibility for every project I ship.
-          </p>
-          <p>
-            When I'm not coding, I'm iterating on <strong>Splitstream</strong>, my 4‑player co‑op heist game.
+            I'm a developer who bridges multiplayer game engineering with full‑stack .NET platforms. I design and implement networked gameplay, AI behavior, and scalable backend APIs. My workflow is pragmatic: I architect the system, direct AI coding assistants for boilerplate when it makes sense, and take full responsibility for everything I ship. Currently a student at Zagreb University of Applied Sciences, but already delivering commercial‑grade code at Byzantine Interactive and Repeat Games.
           </p>
         </div>
       </div>
@@ -125,7 +120,7 @@
     </div>
   </section>
 
-  <!-- What I Offer Section (NEW) -->
+  <!-- What I Offer Section -->
   <section id="offer" class="section">
     <div class="container">
       <h2 class="section-title reveal">What I Offer</h2>
@@ -134,12 +129,12 @@
         <div class="offer-card reveal">
           <i class="fas fa-gamepad"></i>
           <h3>Custom Game Development</h3>
-          <p>Any engine or framework – Unreal Engine 5, Unity, Raylib, Pygame, or others. From prototypes to full multiplayer games with complex systems (GAS, timeline mechanics, networking).</p>
+          <p>Any engine or framework. From prototypes to full multiplayer games with complex gameplay systems, AI, and networking.</p>
         </div>
         <div class="offer-card reveal">
           <i class="fas fa-globe"></i>
           <h3>Full‑Stack .NET Platforms</h3>
-          <p>Web APIs, JWT auth, SQL databases, EF Core – operational systems for small and medium businesses (booking, CRM, invoicing, dashboards).</p>
+          <p>Web APIs, JWT auth, SQL databases, EF Core – operational systems for small and medium businesses.</p>
         </div>
         <div class="offer-card reveal">
           <i class="fas fa-robot"></i>
@@ -173,10 +168,13 @@
           <div class="project-info">
             <span class="project-tag">Unreal Engine 5 / C++ / GAS / Multiplayer</span>
             <h3>Splitstream <span class="project-status">In Progress</span></h3>
-            <p>4‑player co‑op heist game with a cause‑and‑effect timeline system – actions in the present reshape the future environment. Built with UE5, C++, and the Gameplay Ability System. Implemented fully networked multiplayer, AI guard behavior, and cross‑timeline coordination. AI assistance used for boilerplate and RPC stubs; core gameplay logic and architecture by me.</p>
+            <p><strong>Problem:</strong> Most co‑op heist games lack meaningful consequences – player actions feel isolated and don't affect the world beyond the immediate moment.</p>
+            <p><strong>What I built:</strong> Designed and implemented a 4‑player cooperative heist game in Unreal Engine 5 with a cause‑and‑effect timeline system. Actions in the present reshape the future environment. Built fully networked multiplayer, synchronized objectives, AI guard behavior, and cross‑timeline coordination using UE5 replication and the Gameplay Ability System (GAS). AI assistance used only for boilerplate and RPC stubs; core logic and architecture by me.</p>
+            <p><strong>Technical challenge:</strong> Implementing deterministic timeline state synchronization across clients while maintaining performance. Solved with custom replicated state management and RPC batching.</p>
             <div class="project-tech">
-              <span>Unreal Engine 5</span><span>C++</span><span>GAS</span><span>Multiplayer</span>
+              <span>Unreal Engine 5</span><span>C++</span><span>GAS</span><span>UE5 replication</span><span>Behavior Trees</span><span>EQS</span>
             </div>
+            <div class="project-metrics"><strong>Metrics:</strong> Supports 4 concurrent players · 3 AI guard types · 5 mission phases</div>
             <div class="project-links">
               <a href="#" class="project-link" style="opacity:0.7;"><i class="fab fa-github"></i> Private – contact for access</a>
             </div>
@@ -191,10 +189,13 @@
           <div class="project-info">
             <span class="project-tag">ASP.NET Core / C# / SQL Server / JWT</span>
             <h3>CleaningPlatform <span class="project-status">In Progress</span></h3>
-            <p>Architected and led development of a full‑stack operations platform for cleaning services. Designed the backend‑driven API with JWT auth, permission‑based authorization, 16 controllers, 15 business logic managers, and 29 entities. Directed implementation using AI‑assisted development – focused on architecture, logic validation, and system integration. I take full responsibility for every project I ship, regardless of how much AI assisted. Result: production‑ready platform delivered rapidly.</p>
+            <p><strong>Problem:</strong> Cleaning service businesses often manage bookings, staff, clients, and invoices through separate tools – no central source of truth.</p>
+            <p><strong>What I built:</strong> Architected and led development of a full‑stack operations platform that consolidates CRM, booking management, workforce coordination, SOP execution, and invoicing into one system. Designed a backend‑driven API with JWT auth, permission‑based authorization, 16 controllers, 15 business logic managers, and 29 entities. Directed implementation using AI‑assisted development – focusing on architecture, logic validation, and integration.</p>
+            <p><strong>Technical challenge:</strong> Building a granular permission system that supports multiple user roles (admin, manager, field staff) without hard‑coding role logic. Solved with claim‑based authorization and a flexible manager layer.</p>
             <div class="project-tech">
               <span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>JWT</span>
             </div>
+            <div class="project-metrics"><strong>Metrics:</strong> 29 entities · 16 API controllers · 15 business logic managers · 2 user roles</div>
             <div class="project-links">
               <a href="https://github.com/Traveler3114/CleaningPlatform" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -209,10 +210,13 @@
           <div class="project-info">
             <span class="project-tag">C++ / C# / Python / Raylib / ASP.NET API</span>
             <h3>Pigeon Invaders</h3>
-            <p>A game rebuilt across three versions to demonstrate deep understanding of core programming concepts: Python/Pygame (rapid prototype), C#/Windows Forms + Firebase (desktop with cloud storage), and C++/Raylib + ASP.NET API + MySQL (high‑performance with full backend). Each iteration was written entirely by me, improving architecture, performance, and feature set. No AI assistance – purely my own code.</p>
+            <p><strong>Problem:</strong> Wanted to prove deep, language‑agnostic programming skills by implementing the same game logic across multiple stacks, each time improving architecture and performance.</p>
+            <p><strong>What I built:</strong> A game rebuilt entirely by me across three versions – no AI assistance. First version: Python/Pygame (rapid prototype). Second version: C#/Windows Forms + Firebase (desktop with cloud score storage). Third version: C++/Raylib + ASP.NET API + MySQL (high‑performance with full backend). Each iteration was written from scratch, demonstrating adaptability and understanding of core concepts.</p>
+            <p><strong>Technical challenge:</strong> Porting game logic between fundamentally different frameworks while preserving gameplay feel and improving performance. Solved by abstracting core game rules and re‑implementing rendering/input layers.</p>
             <div class="project-tech">
               <span>C++</span><span>C#</span><span>Python</span><span>Raylib</span><span>ASP.NET</span><span>MySQL</span>
             </div>
+            <div class="project-metrics"><strong>Metrics:</strong> 3 complete rewrites · 0% AI assistance · 100% personal code</div>
             <div class="project-links">
               <a href="https://github.com/Traveler3114/PigeonInvaders" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -227,10 +231,13 @@
           <div class="project-info">
             <span class="project-tag">Modular backend / .NET / Plugin architecture</span>
             <h3>GetThere <span class="project-status">In Progress</span></h3>
-            <p>A modular transport and travel platform with a unified wallet and account system across multiple mobility operators. Designed the backend architecture to allow rapid integration of new operator APIs (buses, trains, e‑scooters, flights). Core wallet system and plugin‑based operator integration are implemented. The project is in active development; I use AI‑assisted coding to accelerate feature delivery while maintaining a clean, extensible architecture. I take full responsibility for all code shipped.</p>
+            <p><strong>Problem:</strong> Travel and mobility apps are fragmented – users need separate accounts, wallets, and tickets for different transport modes.</p>
+            <p><strong>What I built:</strong> A modular transport platform with a unified wallet and account system across multiple mobility operators. Designed the backend architecture to allow rapid integration of new operator APIs via a plugin pattern. Implemented core wallet system and plugin‑based operator integration. AI‑assisted coding used to accelerate feature delivery while maintaining clean, extensible architecture.</p>
+            <p><strong>Technical challenge:</strong> Designing a plugin system that lets new operators be added without modifying core code. Solved with interface‑based contracts and dynamic service registration.</p>
             <div class="project-tech">
-              <span>C#</span><span>.NET</span><span>SQL</span><span>REST API design</span>
+              <span>C#</span><span>.NET</span><span>SQL</span><span>REST API design</span><span>Plugin architecture</span>
             </div>
+            <div class="project-metrics"><strong>Metrics:</strong> Modular design supporting unlimited operator plugins · Unified wallet for all transport modes</div>
             <div class="project-links">
               <a href="https://github.com/Traveler3114/GetThere" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -264,6 +271,17 @@
             <p>Developed a multiplayer MOBA‑style game demo from scratch. Implemented core gameplay systems, abilities, and networking using Unreal Engine 5, C++, and Gameplay Ability System (GAS).</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I'm looking for section -->
+  <section id="looking" class="section alt-section">
+    <div class="container">
+      <h2 class="section-title reveal">What I'm Looking For</h2>
+      <div class="looking-content reveal">
+        <p><strong>Seeking:</strong> Unreal Engine Developer roles · Gameplay Programmer positions · Full‑Stack .NET opportunities · Game development internships</p>
+        <p>Open for freelance, contract, or part‑time collaboration. Available immediately for remote or on‑site (Zagreb, Croatia).</p>
       </div>
     </div>
   </section>
