@@ -163,26 +163,7 @@
     <div class="container">
       <h2 class="section-title reveal">Experience</h2>
       <p class="section-subtitle reveal">Where I've worked and what I've done</p>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">May 2025 – Jul 2025</span>
-            <h3>Gameplay Programmer</h3>
-            <span class="timeline-company">Byzantine Interactive</span>
-            <p>Joined an existing Unreal Engine 5 Gameplay Ability System codebase and resolved gameplay, ability, and networking issues. Worked within a production environment to improve reliability, gameplay behavior, and overall system stability.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-year">Aug 2025 – Sep 2025</span>
-            <h3>Sole Programmer</h3>
-            <span class="timeline-company">Repeat Games</span>
-            <p>Sole programmer responsible for developing a multiplayer MOBA-style prototype in Unreal Engine 5. Designed and implemented gameplay systems, abilities, networking features, and core architecture from the ground up.</p>
-          </div>
-        </div>
-      </div>
+      <div class="timeline" id="experience-container"></div>
     </div>
   </section>
 
@@ -265,103 +246,7 @@
     <div class="container">
       <h2 class="section-title reveal">Featured Projects</h2>
       <p class="section-subtitle reveal">Selected projects demonstrating multiplayer systems, backend architecture, and custom software development.</p>
-      <div class="projects-grid">
-        <!-- Splitstream -->
-        <div class="project-card reveal" data-category="gamedev">
-          <div class="project-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e);">
-            <i class="fas fa-users"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Unreal Engine 5 / C++ / GAS / Multiplayer</span>
-            <h3>Splitstream <span class="project-type">Personal</span><span class="project-status">In Progress</span></h3>
-            <p><strong>Problem:</strong> Building a multiplayer co-op heist game where player actions reshape future mission states through a shared timeline system — without breaking synchronization.</p>
-            <p><strong>What I built:</strong> A 4-player cooperative heist game in Unreal Engine 5 with a cause‑and‑effect timeline system. Actions in the present reshape the future environment. Built fully networked multiplayer, synchronized objectives, AI guard behavior, and cross‑timeline coordination using UE5 replication and the Gameplay Ability System (GAS).</p>
-            <p><strong>Result:</strong> Fully networked 4-player co-op with cross-timeline coordination, AI guard behavior, and synchronized mission phases — maintaining determinism across all clients.</p>
-            <p><strong>Technical challenge:</strong> Implementing deterministic timeline state synchronization across clients while maintaining performance. Solved with custom replicated state management and RPC batching.</p>
-            <div class="project-role">Role: Lead Developer</div>
-            <div class="project-duration">Duration: Ongoing</div>
-            <div class="project-tech">
-              <span>Unreal Engine 5</span><span>C++</span><span>GAS</span><span>UE5 replication</span><span>Behavior Trees</span><span>EQS</span>
-            </div>
-            <div class="project-metrics"><strong>Metrics:</strong> 4-player co-op · 3 AI guard types · 5 mission phases</div>
-            <div class="project-links">
-              <a href="#" class="project-link" style="opacity:0.7;"><i class="fab fa-github"></i> Private – contact for access</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- CleaningPlatform -->
-        <div class="project-card reveal" data-category="fullstack">
-          <div class="project-img" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-            <i class="fas fa-broom"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">ASP.NET Core / C# / SQL Server / JWT</span>
-            <h3>CleaningPlatform <span class="project-type">Personal</span><span class="project-status">In Progress</span></h3>
-            <p><strong>Problem:</strong> Cleaning service businesses often manage bookings, staff, clients, and invoices through separate tools – no central source of truth.</p>
-            <p><strong>What I built:</strong> Architected and led development of a full‑stack operations platform that consolidates CRM, booking management, workforce coordination, SOP execution, and invoicing into one system. Designed a backend‑driven API with JWT auth, permission‑based authorization, 16 controllers, 15 business logic managers, and 29 entities.</p>
-            <p><strong>Result:</strong> Consolidates client management, workforce coordination, SOP execution, and invoicing into a single operational platform.</p>
-            <p><strong>Technical challenge:</strong> Building a granular permission system that supports multiple user roles (admin, manager, field staff) without hard‑coding role logic. Solved with claim‑based authorization and a flexible manager layer.</p>
-            <div class="project-role">Role: Lead Developer</div>
-            <div class="project-duration">Duration: Ongoing</div>
-            <div class="project-tech">
-              <span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>JWT</span>
-            </div>
-            <div class="project-metrics"><strong>Platform:</strong> CRM &bull; Scheduling &bull; Workforce Management &bull; Invoicing</div>
-            <div class="project-links">
-              <a href="https://github.com/Traveler3114/CleaningPlatform" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pigeon Invaders -->
-        <div class="project-card reveal" data-category="gamedev">
-          <div class="project-img" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-            <i class="fas fa-dove"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">C++ / C# / Python / Raylib / ASP.NET API</span>
-            <h3>Pigeon Invaders <span class="project-type">Personal</span></h3>
-            <p><strong>Problem:</strong> Porting a game across different languages and frameworks is the fastest way to surface architectural weaknesses — but most projects optimize for one stack and never build the cross‑platform insight that makes architecture truly portable.</p>
-            <p><strong>What I built:</strong> A game rebuilt across three versions — Python/Pygame (rapid prototype), C#/Windows Forms + Firebase (desktop with cloud storage), and C++/Raylib + ASP.NET API + MySQL (high‑performance with full backend). Each iteration improved architecture and performance, demonstrating adaptability across stacks.</p>
-            <p><strong>Result:</strong> Three complete, playable versions across Python, C#, and C++ stacks — each with progressively better architecture, performance, and backend integration.</p>
-            <p><strong>Technical challenge:</strong> Porting game logic between fundamentally different frameworks while preserving gameplay feel and improving performance. Solved by abstracting core game rules and re‑implementing rendering/input layers.</p>
-            <div class="project-role">Role: Sole Developer</div>
-            <div class="project-duration">Duration: Multiple iterations</div>
-            <div class="project-tech">
-              <span>C++</span><span>C#</span><span>Python</span><span>Raylib</span><span>ASP.NET</span><span>MySQL</span>
-            </div>
-            <div class="project-metrics"><strong>Metrics:</strong> 3 complete rewrites · 3 distinct tech stacks</div>
-            <div class="project-links">
-              <a href="https://github.com/Traveler3114/PigeonInvaders" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- GetThere -->
-        <div class="project-card reveal" data-category="fullstack">
-          <div class="project-img" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
-            <i class="fas fa-bus"></i>
-          </div>
-          <div class="project-info">
-            <span class="project-tag">Modular backend / .NET / Plugin architecture</span>
-            <h3>GetThere <span class="project-type">Personal</span><span class="project-status">In Progress</span></h3>
-            <p><strong>Problem:</strong> Travel and mobility apps are fragmented – users need separate accounts, wallets, and tickets for different transport modes.</p>
-            <p><strong>What I built:</strong> A modular transport platform with a unified wallet and account system across multiple mobility operators. Designed the backend architecture to allow rapid integration of new operator APIs via a plugin pattern. Implemented core wallet system and plugin‑based operator integration with a focus on clean, extensible architecture.</p>
-            <p><strong>Result:</strong> Provides a unified account and wallet system across multiple transport operators from a single platform.</p>
-            <p><strong>Technical challenge:</strong> Designing a plugin system that lets new operators be added without modifying core code. Solved with interface‑based contracts and dynamic service registration.</p>
-            <div class="project-role">Role: Lead Developer</div>
-            <div class="project-duration">Duration: Ongoing</div>
-            <div class="project-tech">
-              <span>C#</span><span>.NET</span><span>SQL</span><span>REST API design</span><span>Plugin architecture</span>
-            </div>
-            <div class="project-metrics"><strong>Metrics:</strong> Designed to support rapid integration of new transport operators through a plugin architecture · Unified wallet for all transport modes</div>
-            <div class="project-links">
-              <a href="https://github.com/Traveler3114/GetThere" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="projects-grid" id="projects-container"></div>
     </div>
   </section>
 
@@ -385,28 +270,7 @@
   <section id="faq" class="section">
     <div class="container">
       <h2 class="section-title reveal">Frequently Asked Questions</h2>
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <h3>Do you work remotely?</h3>
-          <p>Yes. I work with clients worldwide.</p>
-        </div>
-        <div class="faq-item reveal">
-          <h3>Can you join existing projects?</h3>
-          <p>Yes. I can integrate into ongoing development work.</p>
-        </div>
-        <div class="faq-item reveal">
-          <h3>Do you work with fixed-price contracts?</h3>
-          <p>Depends on project scope. I'm flexible.</p>
-        </div>
-        <div class="faq-item reveal">
-          <h3>Do you sign NDAs?</h3>
-          <p>Yes. Happy to sign before discussing details.</p>
-        </div>
-        <div class="faq-item reveal">
-          <h3>Do you provide maintenance and support?</h3>
-          <p>Yes. I offer ongoing support after delivery.</p>
-        </div>
-      </div>
+      <div class="faq-list" id="faq-container"></div>
     </div>
   </section>
 
@@ -486,6 +350,9 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <script src="data/projects.js"></script>
+  <script src="data/faq.js"></script>
+  <script src="data/experience.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
