@@ -509,6 +509,38 @@ img { max-width: 100%; display: block; }
   font-weight: 500;
 }
 
+/* ========== Who I Work Best With ========== */
+.workwith-list {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workwith-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.workwith-item i {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.workwith-footer {
+  max-width: 550px;
+  margin: 32px auto 0;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 /* ========== Why Work With Me ========== */
 .why-grid {
   display: grid;
@@ -552,6 +584,27 @@ img { max-width: 100%; display: block; }
   .why-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ========== My Approach ========== */
+.approach-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.approach-card p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.approach-card p:last-child {
+  margin-bottom: 0;
 }
 
 /* ========== Skills ========== */
@@ -705,6 +758,36 @@ img { max-width: 100%; display: block; }
 .service-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ========== Quality Guarantee ========== */
+.guarantee-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 40px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+}
+
+.guarantee-card:hover {
+  border-color: rgba(108, 99, 255, 0.12);
+}
+
+.guarantee-card i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.guarantee-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 /* ========== Process Steps ========== */

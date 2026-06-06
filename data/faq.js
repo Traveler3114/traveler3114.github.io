@@ -1,23 +1,31 @@
 const faq = [
   {
     question: 'Do you work remotely?',
-    answer: 'Yes. I work with clients worldwide.'
+    answer: 'Yes. I work with clients worldwide — across Europe, the US, and beyond.'
   },
   {
-    question: 'Can you join existing projects?',
-    answer: 'Yes. I can integrate into ongoing development work.'
+    question: 'How does pricing work?',
+    answer: 'Yes. Most projects are delivered using fixed-price milestones with clearly defined deliverables, review points, and payment stages.'
   },
   {
-    question: 'Do you work with fixed-price contracts?',
-    answer: 'Depends on project scope. I\'m flexible.'
+    question: 'Can you join an existing project?',
+    answer: 'Yes. I can jump into ongoing work, whether you need bug fixes, new features, or help shipping an overdue release.'
+  },
+  {
+    question: 'Do you provide post-launch support?',
+    answer: 'Yes. Every project includes post-launch support. If implementation issues are discovered after launch, I\'ll work with you to resolve them at no additional cost.'
+  },
+  {
+    question: 'What happens after delivery?',
+    answer: 'Every project includes post-launch support. If implementation issues are discovered after launch, I\'ll work with you to resolve them at no additional cost.'
+  },
+  {
+    question: 'Who do you typically work with?',
+    answer: 'I primarily work with indie developers, startups, small studios, and small businesses looking for a reliable technical partner.'
   },
   {
     question: 'Do you sign NDAs?',
-    answer: 'Yes. Happy to sign before discussing details.'
-  },
-  {
-    question: 'Do you provide maintenance and support?',
-    answer: 'Yes. I offer ongoing support after delivery.'
+    answer: 'Yes. Happy to sign an NDA before we discuss anything.'
   }
 ]
 
