@@ -1,12 +1,12 @@
 const experiences = [
   {
-    year: 'May 2025 \u2013 Jul 2025',
+    year: 'May 2025 to Jul 2025',
     title: 'Gameplay Programmer',
     company: 'Byzantine Interactive',
     description: 'Joined an existing Unreal Engine 5 Gameplay Ability System codebase and resolved gameplay, ability, and networking issues. Worked within a production environment to improve reliability, gameplay behavior, and overall system stability.'
   },
   {
-    year: 'Aug 2025 \u2013 Sep 2025',
+    year: 'Aug 2025 to Sep 2025',
     title: 'Sole Programmer',
     company: 'Repeat Games',
     description: 'Sole programmer responsible for developing a multiplayer MOBA-style prototype in Unreal Engine 5. Designed and implemented gameplay systems, abilities, networking features, and core architecture from the ground up.'

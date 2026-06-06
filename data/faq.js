@@ -1,7 +1,7 @@
 const faq = [
   {
     question: 'Do you work remotely?',
-    answer: 'Yes. I work with clients worldwide — across Europe, the US, and beyond.'
+    answer: 'Yes. I work with clients worldwide, across Europe, the US, and beyond.'
   },
   {
     question: 'How does pricing work?',
