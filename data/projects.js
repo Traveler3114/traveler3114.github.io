@@ -1,5 +1,6 @@
 const projects = [
   {
+    slug: 'splitstream',
     category: 'gamedev',
     imgStyle: 'background: linear-gradient(135deg, #1a1a2e, #16213e);',
     imgIcon: 'fa-users',
@@ -7,6 +8,7 @@ const projects = [
     title: 'Splitstream',
     type: 'Personal',
     status: 'In Progress',
+    summary: 'A 4-player co-op heist game featuring timeline manipulation mechanics built in Unreal Engine 5.',
     sections: [
       { label: 'Problem', text: 'Building a multiplayer co-op heist game where player actions reshape future mission states through a shared timeline system, without breaking synchronization.' },
       { label: 'What I built', text: 'A 4-player cooperative heist game in Unreal Engine 5 with a cause and effect timeline system. Actions in the present reshape the future environment. Built fully networked multiplayer, synchronized objectives, AI guard behavior, and cross timeline coordination using UE5 replication and the Gameplay Ability System (GAS).' },
@@ -21,6 +23,7 @@ const projects = [
     links: [{ icon: 'fab fa-github', text: 'Private, contact for access' }]
   },
   {
+    slug: 'cleaningplatform',
     category: 'fullstack',
     imgStyle: 'background: linear-gradient(135deg, #667eea, #764ba2);',
     imgIcon: 'fa-broom',
@@ -28,6 +31,7 @@ const projects = [
     title: 'CleaningPlatform',
     type: 'Personal',
     status: 'In Progress',
+    summary: 'A full-stack operations platform that consolidates CRM, scheduling, workforce management, and invoicing for cleaning businesses.',
     sections: [
       { label: 'Problem', text: 'Cleaning service businesses often manage bookings, staff, clients, and invoices through separate tools, with no central source of truth.' },
       { label: 'What I built', text: 'Architected and led development of a full stack operations platform that consolidates CRM, booking management, workforce coordination, SOP execution, and invoicing into one system. Designed a backend driven API with JWT auth, permission based authorization, 16 controllers, 15 business logic managers, and 29 entities.' },
@@ -42,6 +46,7 @@ const projects = [
     links: [{ icon: 'fab fa-github', text: 'Code', url: 'https://github.com/Traveler3114/CleaningPlatform' }]
   },
   {
+    slug: 'pigeon-invaders',
     category: 'gamedev',
     imgStyle: 'background: linear-gradient(135deg, #f093fb, #f5576c);',
     imgIcon: 'fa-dove',
@@ -49,6 +54,7 @@ const projects = [
     title: 'Pigeon Invaders',
     type: 'Personal',
     status: null,
+    summary: 'A game rebuilt across Python, C#, and C++ stacks to demonstrate cross-platform architectural skill and progressive performance improvement.',
     sections: [
       { label: 'Problem', text: 'Porting a game across different languages and frameworks is the fastest way to surface architectural weaknesses, but most projects optimize for one stack and never build the cross platform insight that makes architecture truly portable.' },
       { label: 'What I built', text: 'A game rebuilt in three versions: Python/Pygame (rapid prototype), C#/Windows Forms + Firebase (desktop with cloud storage), and C++/Raylib + ASP.NET API + MySQL (high performance with full backend). Each iteration improved architecture and performance, demonstrating adaptability across stacks.' },
@@ -63,6 +69,7 @@ const projects = [
     links: [{ icon: 'fab fa-github', text: 'Code', url: 'https://github.com/Traveler3114/PigeonInvaders' }]
   },
   {
+    slug: 'getthere',
     category: 'fullstack',
     imgStyle: 'background: linear-gradient(135deg, #43e97b, #38f9d7);',
     imgIcon: 'fa-bus',
@@ -70,6 +77,7 @@ const projects = [
     title: 'GetThere',
     type: 'Personal',
     status: 'In Progress',
+    summary: 'A modular transport platform with a unified wallet that integrates multiple mobility operators through a plugin architecture.',
     sections: [
       { label: 'Problem', text: 'Travel and mobility apps are fragmented, where users need separate accounts, wallets, and tickets for different transport modes.' },
       { label: 'What I built', text: 'A modular transport platform with a unified wallet and account system across multiple mobility operators. Designed the backend architecture to allow rapid integration of new operator APIs via a plugin pattern. Implemented core wallet system and plugin based operator integration with a focus on clean, extensible architecture.' },
@@ -96,19 +104,13 @@ function renderProjects() {
       </div>
       <div class="project-info">
         <span class="project-tag">${p.tag}</span>
-        <h3>${p.title}${p.type ? ` <span class="project-type">${p.type}</span>` : ''}${p.status ? ` <span class="project-status">${p.status}</span>` : ''}</h3>
-        ${p.sections.map(s => `<p><strong>${s.label}:</strong> ${s.text}</p>`).join('')}
-        <div class="project-role">Role: ${p.role}</div>
-        <div class="project-duration">Duration: ${p.duration}</div>
+        <h3>${p.title}</h3>
+        <p class="project-summary">${p.summary}</p>
         <div class="project-tech">
           ${p.tech.map(t => `<span>${t}</span>`).join('')}
         </div>
-        <div class="project-metrics"><strong>${p.metricsLabel}:</strong> ${p.metrics}</div>
         <div class="project-links">
-          ${p.links.map(l => l.url
-            ? `<a href="${l.url}" target="_blank" class="project-link"><i class="${l.icon}"></i> ${l.text}</a>`
-            : `<a href="#" class="project-link" style="opacity:0.7;"><i class="${l.icon}"></i> ${l.text}</a>`
-          ).join('')}
+          <a href="projects/${p.slug}.html" class="btn btn-primary project-case-study">Read Case Study <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

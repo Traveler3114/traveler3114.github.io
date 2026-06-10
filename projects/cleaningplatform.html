@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleaningPlatform | Matej Križić</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">MK</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="../index.html#services" class="nav-link">Services</a></li>
+        <li><a href="../index.html#projects" class="nav-link">Work</a></li>
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+        <li class="nav-cta-mobile"><a href="../index.html#contact" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="../index.html#contact" class="btn btn-primary nav-cta-desktop">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-breadcrumb">
+      <a href="../index.html#projects">&larr; Back to Projects</a>
+    </div>
+
+    <section class="project-hero">
+      <span class="project-hero-tag">ASP.NET Core / C# / SQL Server / JWT</span>
+      <h1 class="project-hero-title">CleaningPlatform</h1>
+      <div class="project-meta">
+        <span>Duration: Ongoing</span>
+        <span>Role: Lead Developer</span>
+      </div>
+      <div class="project-tech-list">
+        <span>C#</span><span>.NET 10</span><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>JWT</span>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Overview</h2>
+      <p>A full-stack operations platform that consolidates CRM, scheduling, workforce management, and invoicing for cleaning businesses.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>The Challenge</h2>
+      <p>Cleaning service businesses often manage bookings, staff, clients, and invoices through separate tools, with no central source of truth.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>My Contribution</h2>
+      <p>Architected and led development of a full stack operations platform that consolidates CRM, booking management, workforce coordination, SOP execution, and invoicing into one system. Designed a backend driven API with JWT auth, permission based authorization, 16 controllers, 15 business logic managers, and 29 entities.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Technical Highlights</h2>
+      <p>Building a granular permission system that supports multiple user roles (admin, manager, field staff) without hard coding role logic. Solved with claim based authorization and a flexible manager layer.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Results</h2>
+      <p>Consolidates client management, workforce coordination, SOP execution, and invoicing into a single operational platform.</p>
+      <p style="margin-top:12px;"><strong>Platform:</strong> CRM &bull; Scheduling &bull; Workforce Management &bull; Invoicing</p>
+    </section>
+
+    <section>
+      <h2 class="section-title" style="margin-bottom:24px;">Gallery</h2>
+      <div class="project-gallery">
+        <div class="image-placeholder">Screenshot Coming Soon</div>
+        <div class="image-placeholder">Screenshot Coming Soon</div>
+        <div class="image-placeholder">Screenshot Coming Soon</div>
+      </div>
+    </section>
+
+    <div class="project-links-section">
+      <a href="https://github.com/Traveler3114/CleaningPlatform" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+      <a href="../index.html#contact" class="btn btn-primary">Start a Project</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Matej Križić. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="../data/projects.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

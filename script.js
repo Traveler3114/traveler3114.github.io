@@ -1,35 +1,38 @@
 // ========== Typing Effect ==========
-const words = ['Indie Games', 'Custom Software', 'Multiplayer Features', 'Business Tools'];
 const dynamicText = document.getElementById('dynamicText');
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
 
-function typeEffect() {
-  const currentWord = words[wordIndex];
-  if (!isDeleting) {
-    dynamicText.textContent = currentWord.slice(0, charIndex + 1);
-    charIndex++;
-    if (charIndex === currentWord.length) {
-      isDeleting = true;
-      setTimeout(typeEffect, 1500);
-      return;
+if (dynamicText) {
+  const words = ['Indie Games', 'Custom Software', 'Multiplayer Features', 'Business Tools'];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (!isDeleting) {
+      dynamicText.textContent = currentWord.slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1500);
+        return;
+      }
+      setTimeout(typeEffect, 100);
+    } else {
+      dynamicText.textContent = currentWord.slice(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        setTimeout(typeEffect, 500);
+        return;
+      }
+      setTimeout(typeEffect, 60);
     }
-    setTimeout(typeEffect, 100);
-  } else {
-    dynamicText.textContent = currentWord.slice(0, charIndex - 1);
-    charIndex--;
-    if (charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(typeEffect, 500);
-      return;
-    }
-    setTimeout(typeEffect, 60);
   }
-}
 
-typeEffect();
+  typeEffect();
+}
 
 // ========== Theme Toggle ==========
 const themeToggle = document.getElementById('themeToggle');
